@@ -25,6 +25,18 @@
             // console.log("tere!!!!!!");
             $('#pilt').attr('src', "http://www.dog-boarding-wetherby.co.uk/wp-content/uploads/How-to-choose-a-healthy-dog-2.jpg");
         });
+        $('#red').click(function() {
+            // console.log("tere!!!!!!");
+            $('body').css('backgroundColor', 'red');
+        });
+        $('#green').click(function() {
+            // console.log("tere!!!!!!");
+            $('body').css('backgroundColor', 'green');
+        });
+        $('#blue').click(function() {
+            // console.log("tere!!!!!!");
+            $('body').css('backgroundColor', 'blue');
+        });
     });
 </script>
 
@@ -39,6 +51,10 @@
 
 <!--<img id='pilt' name="KASS" onclick="changeImg()" src="http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg">-->
 <img id='pilt' name="KASS" src="http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg" alt="Looma Pilt">
-
+<div>
+    <button class="btn" id="red">red</button>
+    <button class="btn" id="green">green</button>
+    <button class="btn" id="blue">blue</button>
+</div>
 </body>
 </html>
