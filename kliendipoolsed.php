@@ -25,18 +25,11 @@
             // console.log("tere!!!!!!");
             $('#pilt').attr('src', "http://www.dog-boarding-wetherby.co.uk/wp-content/uploads/How-to-choose-a-healthy-dog-2.jpg");
         });
-        $('#red').click(function() {
+        $('.btn').click(function() {
             // console.log("tere!!!!!!");
-            $('body').css('backgroundColor', 'red');
+            $('body').css('backgroundColor', $(this).text());
         });
-        $('#green').click(function() {
-            // console.log("tere!!!!!!");
-            $('body').css('backgroundColor', 'green');
-        });
-        $('#blue').click(function() {
-            // console.log("tere!!!!!!");
-            $('body').css('backgroundColor', 'blue');
-        });
+
     });
 </script>
 
@@ -54,7 +47,7 @@
 <div>
     <button class="btn" id="red">red</button>
     <button class="btn" id="green">green</button>
-    <button class="btn" id="blue">blue</button>
+    <button class="btn" id="blue">brown</button>
 </div>
 </body>
 </html>
