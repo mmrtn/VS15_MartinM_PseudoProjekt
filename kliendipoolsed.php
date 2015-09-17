@@ -6,6 +6,13 @@
 </head>
 <body>
 <button onclick="alert('tere maailm!!');">Tere maailm</button>
-<a onclick="alert('tere maailm!!');" href="http://khk.ee/">tere maailm</a>
+<div>
+    <a onclick="alert('tere maailm!!');" href="http://khk.ee/">tere maailm</a>
+</div>
+
+<div>
+    <a href="" onclick="alert('jääme siia');">jääme siia</a>
+</div>
+
 </body>
 </html>
