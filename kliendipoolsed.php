@@ -19,6 +19,18 @@
     //            pic.name="KASS";
     //        }
     //    }
+    function clickOnBrowser(){
+        if (event.button===2){
+            return false;
+        }
+    }
+
+    // Keela ära parema hiirekliki kasutamine veebilehel..
+    if (document.all&&!document.getElementById){
+        document.onmousedown=clickOnBrowser;
+    }
+    document.oncontextmenu=new Function("return false");
+
     $(document).ready(function() {
 
         $('#pilt').click(function() {
@@ -47,7 +59,7 @@
 <div>
     <button class="btn" id="red">red</button>
     <button class="btn" id="green">green</button>
-    <button class="btn" id="blue">brown</button>
+    <button class="btn" id="blue">blue</button>
 </div>
 </body>
 </html>
