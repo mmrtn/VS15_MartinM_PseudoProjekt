@@ -53,6 +53,10 @@
             allowRightClick(true);
         });
 
+        $('#showHide').click(function() {
+            $('#pilt').toggle();
+        });
+
     });
 </script>
 
@@ -75,5 +79,6 @@
 </div>
 <br>
 <button id="rightClick">Luba parem klõps</button>
+<button id="showHide">IMG show/hide</button>
 </body>
 </html>
