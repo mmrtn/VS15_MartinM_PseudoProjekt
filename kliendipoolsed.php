@@ -26,12 +26,20 @@
     }
 
     // Keela ära parema hiirekliki kasutamine veebilehel..
-    if (document.all&&!document.getElementById){
-        document.onmousedown=clickOnBrowser;
+    function allowRightClick(allow) {
+        if (!allow) {
+            if (document.all&&!document.getElementById){
+                document.onmousedown=false;
+            }
+            document.oncontextmenu=new Function("return false");
+        }
+        else {
+            document.oncontextmenu=null;
+        }
     }
-    document.oncontextmenu=new Function("return false");
 
     $(document).ready(function() {
+        allowRightClick(false);
 
         $('#pilt').click(function() {
             // console.log("tere!!!!!!");
@@ -41,6 +49,9 @@
             // console.log("tere!!!!!!");
             $('body').css('backgroundColor', $(this).text());
         });
+        $('#rightClick').click(function() {
+            allowRightClick(true);
+        });
 
     });
 </script>
@@ -49,7 +60,6 @@
 <div>
     <a onclick="alert('tere maailm!!');" href="http://khk.ee/">tere maailm</a>
 </div>
-
 <div>
     <a href="" onclick="alert('jääme siia');">jääme siia</a>
 </div>
@@ -60,6 +70,10 @@
     <button class="btn" id="red">red</button>
     <button class="btn" id="green">green</button>
     <button class="btn" id="blue">blue</button>
+
+
 </div>
+<br>
+<button id="rightClick">Luba parem klõps</button>
 </body>
 </html>
