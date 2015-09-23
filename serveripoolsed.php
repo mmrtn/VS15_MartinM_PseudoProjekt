@@ -35,6 +35,11 @@
 
     echo "<p>Teha kaks muutujat väärtustega 1.23 ja 2.34 ning kuvada ekraanil nende summat : </p>" , ($float1+$float2);
 
+    if (!empty($_GET['koer'])) {
+        echo "<p>".$_GET['koer']."</p>";
+    }
+
+
 //    echo $isik['eesnimi'].' '.$isik['perenimi'].' ('.$isik['vanus'].')';
 //    if ((strpos('aeiouõäüö', strtolower($isik['eesnimi'][0])) !== FALSE)) {
 //        echo '<br>Nimi algab vokaaliga';
