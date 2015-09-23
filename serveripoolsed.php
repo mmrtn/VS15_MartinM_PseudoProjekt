@@ -6,10 +6,14 @@
 </head>
 <body>
     <?php
+        function is_first_letter_vowel($str) {
+            return (strpos('aeiouõäüö', strtolower($str[0])) !== FALSE) ? true : false;
+        }
+
         $age = 99;
-        $first='Martin';
+        $first='aMartin';
         $last='Meltsas';
-        $eesnimi_algab_vokaaliga=false;
+
 
         $isik=array(
             'eesnimi'=>$first,
@@ -19,6 +23,9 @@
         );
 
     $isik_objekt = (object) array_merge($isik, array('sugu'=>'mees'));
+
+    $eesnimi_algab_vokaaliga=is_first_letter_vowel($isik_objekt->eesnimi);
+    // echo "<em>ALGAB VOKAALIGA: $eesnimi_algab_vokaaliga</em>";
 
     foreach ($isik_objekt as $key=>$value) {
         echo "<p>$key : $value</p>";
