@@ -39,7 +39,6 @@
         echo "<p>".$_GET['koer']."</p>";
     }
 
-
 //    echo $isik['eesnimi'].' '.$isik['perenimi'].' ('.$isik['vanus'].')';
 //    if ((strpos('aeiouõäüö', strtolower($isik['eesnimi'][0])) !== FALSE)) {
 //        echo '<br>Nimi algab vokaaliga';
