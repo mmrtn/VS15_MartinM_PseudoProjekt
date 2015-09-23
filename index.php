@@ -6,14 +6,14 @@
 </head>
 <body>
 <?php
-if (!empty($_GET['page']) && count($_GET['page'])>0) {
-    // $page = (!empty($_GET['page']) ? $_GET['page'] : 'home');
-    require($_GET['page'] . '.php');
+if (array_key_exists('page',$_GET)) {
+    $page = (!empty($_GET['page']) ? $_GET['page'] : 'home');
+    require($page . '.php');
 }
 ?>
 
 
-<form action="index.php?" method="get">
+<form action="?" method="get">
     <input name="page" >
     <input type="submit">
 </form>
