@@ -10,6 +10,7 @@
         $first='Martin';
         $last='Meltsas';
         $eesnimi_algab_vokaaliga=false;
+
         $isik=array(
             'eesnimi'=>$first,
             'perenimi'=>$last,
@@ -17,6 +18,9 @@
         );
 
     echo $isik['eesnimi'].' '.$isik['perenimi'].' ('.$isik['vanus'].')';
+    if ((strpos('aeiouõäüö', strtolower($isik['eesnimi'][0])) !== FALSE)) {
+        echo '<br>Nimi algab vokaaliga';
+    }
     ?>
 
 </body>
