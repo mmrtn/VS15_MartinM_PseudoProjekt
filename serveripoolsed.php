@@ -10,8 +10,13 @@
         $first='Martin';
         $last='Meltsas';
         $eesnimi_algab_vokaaliga=false;
+        $isik=array(
+            'eesnimi'=>$first,
+            'perenimi'=>$last,
+            'vanus'=>$age
+        );
 
-    echo "$first $last ($age)";
+    echo $isik['eesnimi'].' '.$isik['perenimi'].' ('.$isik['vanus'].')';
     ?>
 
 </body>
