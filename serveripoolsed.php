@@ -5,7 +5,11 @@
     <title>Pseudoprojekt Serveripoolsed</title>
 </head>
 <body>
-    <?="Tere Maailm!"?>
+    <?php
+        $first='Martin';
+        $last='Meltsas';
+        echo "$first $last";
+    ?>
 
 </body>
 </html>
