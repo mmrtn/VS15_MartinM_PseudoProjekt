@@ -11,9 +11,11 @@
         }
 
         $age = 99;
-        $first='aMartin';
+        $first='Martin';
         $last='Meltsas';
 
+        $float1=1.23;
+        $float2=2.34;
 
         $isik=array(
             'eesnimi'=>$first,
@@ -30,6 +32,8 @@
     foreach ($isik_objekt as $key=>$value) {
         echo "<p>$key : $value</p>";
     }
+
+    echo "<p>Teha kaks muutujat väärtustega 1.23 ja 2.34 ning kuvada ekraanil nende summat : </p>" , ($float1+$float2);
 
 //    echo $isik['eesnimi'].' '.$isik['perenimi'].' ('.$isik['vanus'].')';
 //    if ((strpos('aeiouõäüö', strtolower($isik['eesnimi'][0])) !== FALSE)) {
