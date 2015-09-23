@@ -12,8 +12,9 @@
     ?>
 
     <form action="?" method="post">
-
-        Name  <input name="kass"><br>
+        <label for="kass">Sinu kassi tõug:
+         <input name="kass" /><br>
+        </label>
 
         <input type="submit" value="?">
 
