@@ -9,7 +9,9 @@
         $age = 99;
         $first='Martin';
         $last='Meltsas';
-        echo "$first $last ($age)";
+        $eesnimi_algab_vokaaliga=false;
+
+    echo "$first $last ($age)";
     ?>
 
 </body>
